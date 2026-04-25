@@ -48,19 +48,21 @@ Segue as etapas que eu usei e que me ajudou a resolver o problema:
 ```bash
       lsblk -o NAME,SIZE,MODEL
 ```
+![](5.png)
+</br>
 Exemplo: <br>
 /dev/sda → disco com problema <br>
 /dev/sdb → disco destino (backup)
 
 ⚠️ Atenção: identificar corretamente os discos, parte crítica.
 
-🔹 ETAPA 4 — Clonagem com ddrescue
+🔹 ETAPA 4 — Clonagem com ddrescue <br>
 🔸 Primeira passada (rápida e segura)
 
 ```bash
       ddrescue -f -n /dev/sda /dev/sdb /root/log.log
 ```
-
+![](6.png) <br>
 Vantagem: 
   * Copia apenas dados legíveis
   * Ignora setores defeituosos
@@ -76,7 +78,8 @@ Vantagem:
   📊 Resultado obtido
   * ~99.99% dos dados recuperados
   * Pequena quantidade de setores defeituosos (~30 KB)
-  * Disco clonado com sucesso
+  * Disco clonado com sucesso <br>
+![](7.png)
 
 🧠 Por que essa abordagem funciona?
 
