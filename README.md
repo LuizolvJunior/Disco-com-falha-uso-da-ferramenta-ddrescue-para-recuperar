@@ -1,4 +1,4 @@
-# Disco-com-falha-uso-da-ferramenta-ddrescue-para-recuperar
+# Disco-com-sistema-de-arquiv-RAW-uso-da-ferramenta-ddrescue-para-recuperar
 
 # 📌 Problema <br>
 O problema começou quando o HD deixou de responder corretamente. Ao iniciar o sistema, havia lentidão e, posteriormente, o disco passou a aparecer como RAW, impossibilitando o acesso a arquivos (fotos, vídeos e materiais de estudo).
