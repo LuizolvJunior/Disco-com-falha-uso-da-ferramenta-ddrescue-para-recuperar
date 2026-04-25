@@ -36,7 +36,7 @@ Segue as etapas que eu usei e que me ajudou a resolver o problema:
       * Modo: ISO
       * Sistema de arquivos: FAT32
       * Configuração padrão funciona
-        * ![Use: Rufus](5.png)
+        * Use: Rufus
 ---------------
 
 🔹 ETAPA 2 — Boot Inicie pelo pendrive <br>
@@ -88,16 +88,19 @@ A clonagem:
 👉 Após a clonagem, o problema deixa de ser físico e passa a ser apenas lógico.
 
 ⚠️ Boas práticas importantes
-Nunca trabalhar diretamente no disco original (/dev/sda)
-Evitar montar discos com falha antes da clonagem
-Não usar chkdsk antes da recuperação
-Sempre validar dados após recuperação
+ * Nunca trabalhar diretamente no disco original (/dev/sda)
+ * Evitar montar discos com falha antes da clonagem
+ * Não usar chkdsk antes da recuperação
+ * Sempre validar dados após recuperação
+   
 🎯 Conclusão
 
 A utilização do ddrescue permitiu recuperar praticamente todos os dados mesmo com o disco apresentando falhas.
-
 Essa abordagem é recomendada principalmente quando:
+ * O disco apresenta lentidão
+ * O sistema de arquivos aparece como RAW
+ * Há suspeita de falha física
 
-O disco apresenta lentidão
-O sistema de arquivos aparece como RAW
-Há suspeita de falha física
+🚀 Insight final
+
+A clonagem não resolve o problema diretamente — ela preserva os dados para que a recuperação seja possível com segurança.
